@@ -1,7 +1,7 @@
 {
-  "main.css": "/react-demo/build/static/css/main.60beaef4.chunk.css",
-  "main.js": "/react-demo/build/static/js/main.86838a79.chunk.js",
-  "main.js.map": "/react-demo/build/static/js/main.86838a79.chunk.js.map",
+  "main.css": "/react-demo/build/static/css/main.969ced97.chunk.css",
+  "main.js": "/react-demo/build/static/js/main.a438baf2.chunk.js",
+  "main.js.map": "/react-demo/build/static/js/main.a438baf2.chunk.js.map",
   "static/js/1.9fc30248.chunk.js": "/react-demo/build/static/js/1.9fc30248.chunk.js",
   "static/js/1.9fc30248.chunk.js.map": "/react-demo/build/static/js/1.9fc30248.chunk.js.map",
   "runtime~main.js": "/react-demo/build/static/js/runtime~main.0b36c6d5.js",
@@ -11,8 +11,8 @@
   "static/media/brown-min.jpg": "/react-demo/build/static/media/brown-min.3f03d49f.jpg",
   "static/media/left-arrow.svg": "/react-demo/build/static/media/left-arrow.a2325768.svg",
   "static/media/brown.jpg": "/react-demo/build/static/media/brown.7e64f6d2.jpg",
-  "static/css/main.60beaef4.chunk.css.map": "/react-demo/build/static/css/main.60beaef4.chunk.css.map",
+  "static/css/main.969ced97.chunk.css.map": "/react-demo/build/static/css/main.969ced97.chunk.css.map",
   "index.html": "/react-demo/build/index.html",
-  "precache-manifest.0ece651c4fd3f65f5d8c6808f9ff0943.js": "/react-demo/build/precache-manifest.0ece651c4fd3f65f5d8c6808f9ff0943.js",
+  "precache-manifest.35a676778f4d208d905ee2d8a8fce29e.js": "/react-demo/build/precache-manifest.35a676778f4d208d905ee2d8a8fce29e.js",
   "service-worker.js": "/react-demo/build/service-worker.js"
 }
