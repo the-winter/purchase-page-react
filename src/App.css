@@ -2,7 +2,9 @@ html,
 body {
 	height: 100%;
 	width: 100%;
-	background-color: #d3d3d3;
+	background-color: #eee;
+	font-family: 'Lato', sans-serif;
+	color: #2c2c2c;
 }
 
 .row {
@@ -22,7 +24,7 @@ body {
 	background-color: white;
 }
 .vertical-divider {
-	border-right: 1px solid #d3d3d3;
+	border-right: 1px solid #eee;
 }
 
 .container-styles {
@@ -31,13 +33,22 @@ body {
 }
 
 .first-block {
-	border-bottom: 1px solid #d3d3d3;
+	border-bottom: 1px solid #eee;
 	padding: 20px 40px 0px 40px;
+}
+.all-products {
+	display: flex;
+}
+.all-products p {
+	margin-left: 15px;
 }
 
 .header-wrap {
 	margin-bottom: 40px;
 	margin-top: 30px;
+}
+.header-wrap p {
+	color: #ccc;
 }
 
 .text-to-select {
@@ -47,21 +58,40 @@ body {
 
 .text-to-select p {
 	display: flex;
-	margin-right: 20px;
 	text-transform: uppercase;
 	cursor: pointer;
+	font-size: small;
 }
 
-.pricing {
-	display: flex;
+.pricing h3 {
+	margin-right: 15px;
+	font-family: 'Lato', sans-serif;
+}
+
+.former {
+	text-decoration: line-through;
+	color: #ccc;
 }
 
 .active {
-	border-bottom: 1px solid blue;
+	color: #2c2c2c;
+	cursor: pointer;
+	font-size: 0.7em;
+	border-bottom: 2px solid rgb(96, 157, 255);
+	margin-right: 30px;
+	padding: 0px 8px;
+}
+
+.inactive {
+	color: #ccc;
+	cursor: pointer;
+	font-size: 0.7em;
+	margin-right: 30px;
+	padding: 0px 8px;
 }
 
 .second-block {
-	border-bottom: 1px solid #d3d3d3;
+	border-bottom: 1px solid #eee;
 	padding: 20px 40px 0px 40px;
 }
 
@@ -72,7 +102,8 @@ body {
 }
 .pricing {
 	font-family: 'Lato, sans-serif';
-	font-weight: '700';
+	font-weight: 700;
+	display: flex;
 }
 
 .color-dropdown {
@@ -83,10 +114,15 @@ body {
 /* third block */
 .button-container {
 	padding-left: 40px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	font-size: small;
-	font-family: 'Lato, sans-serif';
+	font-family: 'Lato', sans-serif;
+}
+
+.button-container p {
+	display: inline-block;
+	margin-left: 15px;
 }
 
 .add-btn-style {
@@ -97,6 +133,7 @@ body {
 	border-radius: 3px;
 	color: white;
 	cursor: pointer;
+	font-family: 'Lato', sans-serif;
 }
 
 .App-header {

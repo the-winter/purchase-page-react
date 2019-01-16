@@ -5,6 +5,8 @@ import { Button } from './components/add-button';
 import { Headphones } from './components/headphones';
 import './App.css';
 
+const leftArrow = require('./assets/images/left-arrow.svg');
+
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -48,7 +50,11 @@ class App extends Component {
 				<div className="row">
 					<div className="col-sm-6 vertical-divider">
 						<div className="first-block">
-							<p>All products</p>
+							<div className="all-products">
+								<img src={leftArrow} />
+								<p>All products</p>
+							</div>
+
 							<div className="header-wrap">
 								<h2>Audio-Technica ATH-MSR7</h2>
 								<p>2017 Best Headphones of the Year Award</p>
@@ -56,7 +62,7 @@ class App extends Component {
 							<div className="text-to-select">
 								{textOptions.map((option, i) => (
 									// why does the onclick function need to be wrapped?
-									<div className={option === textChoice ? 'active' : ''} key={i}>
+									<div className={option === textChoice ? 'active' : 'inactive'} key={i}>
 										<p onClick={() => this.textChoice(option)}>{option}</p>
 									</div>
 								))}
@@ -66,7 +72,7 @@ class App extends Component {
 							<Details textChoice={textChoice} />
 							<div className="pricing">
 								<h3>$59.99</h3>
-								<h3>$89.99</h3>
+								<h3 class="former">$89.99</h3>
 							</div>
 							<ColorSelector colorChoice={this.colorChoice} color={color} />
 						</div>
