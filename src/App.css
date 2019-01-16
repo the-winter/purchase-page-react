@@ -135,12 +135,22 @@ body {
 	cursor: pointer;
 	font-family: 'Lato', sans-serif;
 }
+.headphones-container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	/* min-height: 630px; */
+}
 
 /* media queries */
 @media only screen and (max-width: 576px) {
 	.container-styles {
 		background-color: white;
 		margin: 0px 0px;
+	}
+
+	.col-sm-6 {
+		min-width: 100%;
 	}
 }
 

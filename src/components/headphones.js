@@ -8,9 +8,13 @@ const brownHeadphonesMin = require('../assets/images/brown-min.jpg');
 
 export const Headphones = props => {
 	return (
-		<div className="headphones-container" style={{ paddingTop: '20px', minHeight: '630px' }}>
+		<div className="headphones-container">
 			<MediaQuery query="(min-width: 577px)">
-				<img className="img-responsive" src={props.color === 'black' ? blackHeadphones : brownHeadphones} />
+				<img
+					style={{ maxHeight: '750px' }}
+					className="img-responsive"
+					src={props.color === 'black' ? blackHeadphones : brownHeadphones}
+				/>
 			</MediaQuery>
 			<MediaQuery query="(max-width: 576px)">
 				<img
