@@ -2,14 +2,27 @@ html,
 body {
 	height: 100%;
 	width: 100%;
-	background-color: grey;
+	background-color: #d3d3d3;
+}
+
+.row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+	display: flex;
+	flex-direction: column;
 }
 
 .col-sm-6 {
 	padding: 0 0;
+	background-color: white;
 }
 .vertical-divider {
-	border-right: 1px solid black;
+	border-right: 1px solid #d3d3d3;
 }
 
 .container-styles {
@@ -18,7 +31,7 @@ body {
 }
 
 .first-block {
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid #d3d3d3;
 	padding: 20px 40px 0px 40px;
 }
 
@@ -48,7 +61,7 @@ body {
 }
 
 .second-block {
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid #d3d3d3;
 	padding: 20px 40px 0px 40px;
 }
 
