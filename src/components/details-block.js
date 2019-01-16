@@ -7,15 +7,8 @@ export class Details extends Component {
 
 	render() {
 		return (
-			<div className="details-block">
-				<div
-					style={{
-						minHeight: '120px',
-						whiteSpace: 'pre-line',
-						fontFamily: 'Lato, sans-serif',
-						paddingTop: '20px',
-					}}
-				>
+			<div>
+				<div className="details-block">
 					{this.props.textChoice === 'details'
 						? `Headphones type - Over-Ear\
                         

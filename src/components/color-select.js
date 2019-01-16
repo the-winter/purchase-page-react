@@ -8,7 +8,7 @@ export class ColorSelector extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="color-dropdown">
 				<p>COLORS</p>
 				<ButtonToolbar>
 					<DropdownButton

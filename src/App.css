@@ -5,6 +5,13 @@ body {
 	background-color: grey;
 }
 
+.col-sm-6 {
+	padding: 0 0;
+}
+.vertical-divider {
+	border-right: 1px solid black;
+}
+
 .container-styles {
 	background-color: white;
 	margin: 50px 50px;
@@ -12,6 +19,12 @@ body {
 
 .first-block {
 	border-bottom: 1px solid grey;
+	padding: 20px 40px 0px 40px;
+}
+
+.header-wrap {
+	margin-bottom: 40px;
+	margin-top: 30px;
 }
 
 .text-to-select {
@@ -32,6 +45,45 @@ body {
 
 .active {
 	border-bottom: 1px solid blue;
+}
+
+.second-block {
+	border-bottom: 1px solid grey;
+	padding: 20px 40px 0px 40px;
+}
+
+.details-block {
+	min-height: 170px;
+	white-space: pre-line;
+	font-family: 'Lato', sans-serif;
+}
+.pricing {
+	font-family: 'Lato, sans-serif';
+	font-weight: '700';
+}
+
+.color-dropdown {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* third block */
+.button-container {
+	padding-left: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: small;
+	font-family: 'Lato, sans-serif';
+}
+
+.add-btn-style {
+	background-color: #609dff;
+	height: 50px;
+	width: 200px;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	cursor: pointer;
 }
 
 .App-header {

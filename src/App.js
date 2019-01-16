@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Details } from './components/details-block';
 import { ColorSelector } from './components/color-select';
+import { Button } from './components/add-button';
+import { Headphones } from './components/headphones';
 import './App.css';
 
 class App extends Component {
@@ -11,6 +13,7 @@ class App extends Component {
 	state = {
 		textChoice: 'description',
 		color: 'black',
+		buttonLabel: 'ADD TO CART',
 	};
 
 	textChoice = choice => {
@@ -26,18 +29,30 @@ class App extends Component {
 		}
 	};
 
+	onAddToCart = () => {
+		this.setState({ buttonLabel: 'Loading...' });
+		setTimeout(
+			function() {
+				this.setState({ buttonLabel: 'VIEW CART' });
+			}.bind(this),
+			2000
+		);
+	};
+
 	render() {
-		const { textChoice, color } = this.state;
+		const { textChoice, color, buttonLabel } = this.state;
 		const textOptions = ['description', 'details'];
 
 		return (
 			<div className="container-fluid container-styles">
 				<div className="row">
-					<div className="col-sm-6">
+					<div className="col-sm-6 vertical-divider">
 						<div className="first-block">
 							<p>All products</p>
-							<h1>Audio-Technica ATH MSR-7</h1>
-							<p>2017 Best Headphones of the Year Award</p>
+							<div className="header-wrap">
+								<h2>Audio-Technica ATH-MSR7</h2>
+								<p>2017 Best Headphones of the Year Award</p>
+							</div>
 							<div className="text-to-select">
 								{textOptions.map((option, i) => (
 									// why does the onclick function need to be wrapped?
@@ -50,14 +65,18 @@ class App extends Component {
 						<div className="second-block">
 							<Details textChoice={textChoice} />
 							<div className="pricing">
-								<p>$59.99</p>
-								<p>$89.99</p>
+								<h3>$59.99</h3>
+								<h3>$89.99</h3>
 							</div>
 							<ColorSelector colorChoice={this.colorChoice} color={color} />
 						</div>
-						<div>C</div>
+						<div>
+							<Button onAddToCart={this.onAddToCart} buttonLabel={buttonLabel} />
+						</div>
 					</div>
-					<div className="col-sm-6">content</div>
+					<div className="col-sm-6">
+						<Headphones color={color} />
+					</div>
 				</div>
 			</div>
 		);
