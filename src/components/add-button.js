@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const Button = props => {
 	return (
@@ -9,4 +10,9 @@ export const Button = props => {
 			<p>{props.buttonLabel === 'VIEW CART' ? 'Item added to cart!' : ''}</p>
 		</div>
 	);
+};
+
+Button.propTypes = {
+	buttonLabel: PropTypes.string,
+	onAddToCart: PropTypes.func,
 };

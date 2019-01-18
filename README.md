@@ -2,6 +2,16 @@ https://the-winter.github.io/react-demo/build/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+https://the-winter.github.io/react-demo/build/
+
+## Features:
+- styled with bootstrap and css flexbox
+- image compression for small screens
+- responsive layout
+
+## Issues
+- no typing library included yet
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { DropdownButton, ButtonToolbar, MenuItem } from 'react-bootstrap';
 
 export const ColorSelector = props => {
@@ -13,4 +14,9 @@ export const ColorSelector = props => {
 			</ButtonToolbar>
 		</div>
 	);
+};
+
+ColorSelector.propTypes = {
+	color: PropTypes.string,
+	colorChoice: PropTypes.func,
 };
