@@ -6,9 +6,7 @@ https://the-winter.github.io/react-demo/build/
 - styled with bootstrap and css flexbox
 - image compression for small screens
 - responsive layout
-
-## Issues
-- no typing library included yet
+- type checking with PropTypes
 
 ## Available Scripts
 
