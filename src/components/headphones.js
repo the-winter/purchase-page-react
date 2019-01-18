@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import MediaQuery from 'react-responsive';
 
 const blackHeadphones = require('../assets/images/black.jpg');
@@ -14,14 +15,20 @@ export const Headphones = props => {
 					style={{ maxHeight: '750px' }}
 					className="img-responsive"
 					src={props.color === 'black' ? blackHeadphones : brownHeadphones}
+					alt="img"
 				/>
 			</MediaQuery>
 			<MediaQuery query="(max-width: 576px)">
 				<img
 					className="img-responsive"
 					src={props.color === 'black' ? blackHeadphonesMin : brownHeadphonesMin}
+					alt="img"
 				/>
 			</MediaQuery>
 		</div>
 	);
+};
+
+Headphones.propTypes = {
+	color: PropTypes.string,
 };

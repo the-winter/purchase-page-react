@@ -8,10 +8,6 @@ import './App.css';
 const leftArrow = require('./assets/images/left-arrow.svg');
 
 class App extends Component {
-	constructor(props) {
-		super(props);
-	}
-
 	state = {
 		textChoice: 'description',
 		color: 'black',
@@ -23,7 +19,6 @@ class App extends Component {
 	};
 
 	colorChoice = choice => {
-		console.log(choice);
 		if (parseInt(choice) === 1) {
 			this.setState({ color: 'black' });
 		} else {
@@ -51,7 +46,7 @@ class App extends Component {
 					<div className="col-sm-6 vertical-divider">
 						<div className="first-block">
 							<div className="all-products">
-								<img src={leftArrow} />
+								<img src={leftArrow} alt="back" />
 								<p>All products</p>
 							</div>
 
@@ -72,7 +67,7 @@ class App extends Component {
 							<Details textChoice={textChoice} />
 							<div className="pricing">
 								<h3>$59.99</h3>
-								<h3 class="former">$89.99</h3>
+								<h3 className="former">$89.99</h3>
 							</div>
 							<ColorSelector colorChoice={this.colorChoice} color={color} />
 						</div>
